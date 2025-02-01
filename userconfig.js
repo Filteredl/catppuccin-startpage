@@ -17,7 +17,7 @@ const default_config = {
   tabs: [
     {
       name: "myself",
-      background_url: "src/img/banners/cbg-09.gif",
+      background_url: "src/img/banners/cbg-03.gif",
       categories: [
         {
           name: "bookmarks",
@@ -29,25 +29,31 @@ const default_config = {
               icon_color: palette.green,
             },
             {
-              name: "musicForProgramming();",
-              url: "https://musicforprogramming.net",
-              icon: "binary-tree",
+              name: "soundcloud",
+              url: "https://soundcloud.com/",
+              icon: "brand-soundcloud",
               icon_color: palette.peach,
             },
+            {
+              name: "4chan",
+              url: "http://4chan.org",
+              icon: "brand-4chan",
+              icon_color: palette.red,
+            }
           ],
         },
         {
           name: "workspace",
           links: [
             {
-              name: "gmail",
+              name: "proton mail",
               url: "https://mail.google.com",
-              icon: "brand-gmail",
-              icon_color: palette.green,
+              icon: "mail-opened",
+              icon_color: palette.lavender,
             },
             {
               name: "calendar",
-              url: "https://calendar.google.com",
+              url: "https://calendar.proton.me/u/0/",
               icon: "calendar-filled",
               icon_color: palette.peach,
             },
@@ -58,9 +64,9 @@ const default_config = {
               icon_color: palette.red,
             },
             {
-              name: "drive",
-              url: "https://drive.google.com/drive/home",
-              icon: "brand-google-drive",
+              name: "filen",
+              url: "https://filen.io/",
+              icon: "brand-onedrive",
               icon_color: palette.blue,
             },
           ],
@@ -69,34 +75,34 @@ const default_config = {
           name: "media",
           links: [
             {
-              name: "уп",
-              url: "https://www.pravda.com.ua",
+              name: "phoronix",
+              url: "https://www.phoronix.com/",
               icon: "news",
               icon_color: palette.green,
             },
             {
-              name: "mil.in.ua",
-              url: "https://mil.in.ua",
+              name: "gaminfonlinux",
+              url: "https://www.gamingonlinux.com/",
               icon: "badge-filled",
               icon_color: palette.peach,
-            },
-            {
-              name: "куток",
-              url: "https://kutok.io",
-              icon: "border-radius",
-              icon_color: palette.red,
-            },
-            {
-              name: "ґрунт",
-              url: "https://grnt.media",
-              icon: "eye-bolt",
-              icon_color: palette.blue,
-            },
-            {
-              name: "village",
-              url: "https://www.village.com.ua",
-              icon: "home-2",
-              icon_color: palette.mauve,
+//            },
+//            {
+//             name: "куток",
+//              url: "https://kutok.io",
+//              icon: "border-radius",
+//              icon_color: palette.red,
+//            },
+//            {
+//              name: "ґрунт",
+//              url: "https://grnt.media",
+//              icon: "eye-bolt",
+//              icon_color: palette.blue,
+//            },
+//            {
+//              name: "village",
+//              url: "https://www.village.com.ua",
+//              icon: "home-2",
+//              icon_color: palette.mauve,
             },
           ],
         },
@@ -104,7 +110,7 @@ const default_config = {
     },
     {
       name: "dev",
-      background_url: "src/img/banners/cbg-07.gif",
+      background_url: "src/img/banners/cbg-06.gif",
       categories: [
         {
           name: "development",
@@ -126,6 +132,12 @@ const default_config = {
               url: "https://stackoverflow.com",
               icon: "brand-stackoverflow",
               icon_color: palette.red,
+            },
+            {
+              name: "publicapi",
+              url: "https://publicapis.io/",
+              icon: "api",
+              icon_color: palette.blue,
             },
           ],
         },
@@ -191,21 +203,21 @@ const default_config = {
     },
     {
       name: "chi ll",
-      background_url: "src/img/banners/cbg-08.gif",
+      background_url: "src/img/banners/cbg-15.gif",
       categories: [
         {
           name: "social media",
           links: [
             {
-              name: "telegram",
-              url: "https://web.telegram.org",
-              icon: "brand-telegram",
+              name: "agora",
+              url: "https://forum.agoraroad.com/index.php",
+              icon: "brand-finder",
               icon_color: palette.green,
             },
             {
-              name: "facebook",
-              url: "https://www.facebook.com",
-              icon: "brand-facebook",
+              name: "bluesky",
+              url: "https://bsky.app/",
+              icon: "brand-bluesky",
               icon_color: palette.peach,
             },
             {
@@ -220,8 +232,8 @@ const default_config = {
           name: "gaming",
           links: [
             {
-              name: "IGN",
-              url: "https://www.ign.com/account/playlist/library",
+              name: "gog",
+              url: "https://www.gog.com/en/",
               icon: "device-gamepad",
               icon_color: palette.green,
             },
@@ -280,6 +292,10 @@ const default_config = {
 };
 
 const CONFIG = new Config(default_config, palette);
+
+const root = document.querySelector(":root");
+root.style.setProperty("--bg", palette.mantle);
+root.style.setProperty("--accent", palette.green);
 
 const root = document.querySelector(":root");
 root.style.setProperty("--bg", palette.mantle);
