@@ -4,7 +4,7 @@ const palette = macchiato;
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "Blanes",
     scale: "C",
   },
   clock: {
