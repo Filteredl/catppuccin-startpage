@@ -47,7 +47,7 @@ const default_config = {
           links: [
             {
               name: "proton mail",
-              url: "https://mail.google.com",
+              url: "https://mail.proton.me/u/0/inbox",
               icon: "mail-opened",
               icon_color: palette.lavender,
             },
@@ -232,29 +232,29 @@ const default_config = {
           name: "gaming",
           links: [
             {
-              name: "gog",
-              url: "https://www.gog.com/en/",
+              name: "protondb",
+              url: "https://www.protondb.com/",
               icon: "device-gamepad",
               icon_color: palette.green,
             },
             {
-              name: "steam",
-              url: "https://store.steampowered.com",
+              name: "steamdb",
+              url: "https://steamdb.info/",
               icon: "brand-steam",
               icon_color: palette.peach,
             },
-            {
-              name: "epicgames",
-              url: "https://store.epicgames.com",
-              icon: "brand-fortnite",
-              icon_color: palette.red,
-            },
-            {
-              name: "nintendo",
-              url: "https://store.nintendo.co.uk",
-              icon: "device-nintendo",
-              icon_color: palette.blue,
-            },
+//            {
+//              name: "epicgames",
+//              url: "https://store.epicgames.com",
+//              icon: "brand-fortnite",
+//              icon_color: palette.red,
+//            },
+//            {
+//              name: "nintendo",
+//              url: "https://store.nintendo.co.uk",
+//              icon: "device-nintendo",
+//              icon_color: palette.blue,
+//            },
           ],
         },
         {
@@ -273,16 +273,17 @@ const default_config = {
               icon_color: palette.peach,
             },
             {
-              name: "patreon",
-              url: "https://www.patreon.com",
+              name: "anime nexus",
+              url: "https://anime.nexus/es",
               icon: "brand-patreon",
               icon_color: palette.red,
             },
             {
-              name: "kyivstar",
-              url: "https://tv.kyivstar.ua",
-              icon: "star-filled",
-              icon_color: palette.blue,
+              name: "",
+              url: "",
+              icon: "",
+              icon_color: palette.yellow,
+
             },
           ],
         },
